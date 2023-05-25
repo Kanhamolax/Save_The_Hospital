@@ -22,6 +22,7 @@ public class Paciente_Controler : MonoBehaviour
     private void Awake()
     {
         Data_Controler.route = 1;
+        Data_Controler.pacientNumeber = 0;
         tragetoria = new Vector3[nWp];
         tragetoria2 = new Vector3[nWp];
         for (int i = 0; i < nWp; i++)
@@ -57,6 +58,7 @@ public class Paciente_Controler : MonoBehaviour
                 GameObject.FindGameObjectWithTag("pacient").transform.DOPath(tragetoria, vel, PathType.CatmullRom, PathMode.Ignore).SetEase(Ease.Linear).SetLookAt(0).OnComplete(() =>
                 {
                     Destroy(GameObject.FindGameObjectWithTag("pacient"));
+                    Data_Controler.pacientNumeber++;
 
                 });
             }
@@ -66,6 +68,7 @@ public class Paciente_Controler : MonoBehaviour
                 GameObject.FindGameObjectWithTag("pacient").transform.DOPath(tragetoria2, vel+1, PathType.CatmullRom, PathMode.Ignore).SetEase(Ease.Linear).SetLookAt(0).OnComplete(() =>
                 {
                     Destroy(GameObject.FindGameObjectWithTag("pacient"));
+                    Data_Controler.pacientNumeber++;
 
                 });
             }
