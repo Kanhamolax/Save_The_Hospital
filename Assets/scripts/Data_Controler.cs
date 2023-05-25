@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Data_Controler 
 {
-    public static int route; // Start is called before the first frame update
+    public static int route,pacientNumeber;
+   
    
 }
