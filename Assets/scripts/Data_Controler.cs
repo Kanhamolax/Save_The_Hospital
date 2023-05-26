@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Data_Controler 
 {
-    public static int route,pacientNumeber,pacientsLost;
-    public static bool playPause;
+    public static int route,pacientNumeber,pacientsLost,pacientSelect;
+    public static bool playPause,movepacient;
    
    
 }

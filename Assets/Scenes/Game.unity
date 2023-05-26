@@ -10106,6 +10106,7 @@ GameObject:
   - component: {fileID: 194358335}
   - component: {fileID: 194358336}
   - component: {fileID: 194358337}
+  - component: {fileID: 194358338}
   m_Layer: 0
   m_Name: Up  (18)
   m_TagString: Untagged
@@ -10196,6 +10197,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &194358338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194358334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 18
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &204347711
 GameObject:
   m_ObjectHideFlags: 0
@@ -10375,6 +10390,7 @@ GameObject:
   - component: {fileID: 234132353}
   - component: {fileID: 234132354}
   - component: {fileID: 234132355}
+  - component: {fileID: 234132356}
   m_Layer: 0
   m_Name: Up  (12)
   m_TagString: Untagged
@@ -10465,6 +10481,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &234132356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234132352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 12
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &238780296
 GameObject:
   m_ObjectHideFlags: 0
@@ -10980,6 +11010,7 @@ GameObject:
   - component: {fileID: 360310643}
   - component: {fileID: 360310644}
   - component: {fileID: 360310645}
+  - component: {fileID: 360310646}
   m_Layer: 0
   m_Name: Up  (5)
   m_TagString: Untagged
@@ -11070,6 +11101,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &360310646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360310642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 5
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &400215148
 GameObject:
   m_ObjectHideFlags: 0
@@ -16633,6 +16678,7 @@ GameObject:
   - component: {fileID: 621404162}
   - component: {fileID: 621404163}
   - component: {fileID: 621404164}
+  - component: {fileID: 621404165}
   m_Layer: 0
   m_Name: Up  (16)
   m_TagString: Untagged
@@ -16723,6 +16769,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &621404165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621404161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 16
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &624832421
 GameObject:
   m_ObjectHideFlags: 0
@@ -17558,6 +17618,7 @@ GameObject:
   - component: {fileID: 824074771}
   - component: {fileID: 824074772}
   - component: {fileID: 824074773}
+  - component: {fileID: 824074774}
   m_Layer: 0
   m_Name: Up  (1)
   m_TagString: Untagged
@@ -17648,6 +17709,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &824074774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824074770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 1
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &832667575
 GameObject:
   m_ObjectHideFlags: 0
@@ -18214,6 +18289,7 @@ GameObject:
   - component: {fileID: 863459318}
   - component: {fileID: 863459319}
   - component: {fileID: 863459320}
+  - component: {fileID: 863459321}
   m_Layer: 0
   m_Name: Up  (7)
   m_TagString: Untagged
@@ -18304,6 +18380,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &863459321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863459317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 7
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &877416847
 GameObject:
   m_ObjectHideFlags: 0
@@ -23519,6 +23609,7 @@ GameObject:
   - component: {fileID: 990448006}
   - component: {fileID: 990448005}
   - component: {fileID: 990448007}
+  - component: {fileID: 990448008}
   m_Layer: 0
   m_Name: 'Up '
   m_TagString: Untagged
@@ -23609,6 +23700,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &990448008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990448004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 0
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &995423000
 GameObject:
   m_ObjectHideFlags: 0
@@ -24635,6 +24740,7 @@ GameObject:
   - component: {fileID: 1044230714}
   - component: {fileID: 1044230715}
   - component: {fileID: 1044230716}
+  - component: {fileID: 1044230717}
   m_Layer: 0
   m_Name: Up  (10)
   m_TagString: Untagged
@@ -24725,6 +24831,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1044230717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044230713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 10
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1081006346
 GameObject:
   m_ObjectHideFlags: 0
@@ -34810,6 +34930,7 @@ GameObject:
   - component: {fileID: 1188367835}
   - component: {fileID: 1188367836}
   - component: {fileID: 1188367837}
+  - component: {fileID: 1188367838}
   m_Layer: 0
   m_Name: Up  (4)
   m_TagString: Untagged
@@ -34900,6 +35021,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1188367838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188367834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 4
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1212340583
 GameObject:
   m_ObjectHideFlags: 0
@@ -38093,6 +38228,7 @@ GameObject:
   - component: {fileID: 1271076753}
   - component: {fileID: 1271076754}
   - component: {fileID: 1271076755}
+  - component: {fileID: 1271076756}
   m_Layer: 0
   m_Name: Up  (8)
   m_TagString: Untagged
@@ -38183,6 +38319,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1271076756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271076752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 8
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1271204853
 GameObject:
   m_ObjectHideFlags: 0
@@ -38278,6 +38428,7 @@ GameObject:
   - component: {fileID: 1295103369}
   - component: {fileID: 1295103370}
   - component: {fileID: 1295103371}
+  - component: {fileID: 1295103372}
   m_Layer: 0
   m_Name: Up  (14)
   m_TagString: Untagged
@@ -38368,6 +38519,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1295103372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295103368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 14
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1326719498
 GameObject:
   m_ObjectHideFlags: 0
@@ -38379,6 +38544,7 @@ GameObject:
   - component: {fileID: 1326719499}
   - component: {fileID: 1326719500}
   - component: {fileID: 1326719501}
+  - component: {fileID: 1326719502}
   m_Layer: 0
   m_Name: Up  (3)
   m_TagString: Untagged
@@ -38469,6 +38635,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1326719502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326719498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 3
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1334532073
 GameObject:
   m_ObjectHideFlags: 0
@@ -38877,6 +39057,7 @@ GameObject:
   - component: {fileID: 1447003756}
   - component: {fileID: 1447003757}
   - component: {fileID: 1447003758}
+  - component: {fileID: 1447003759}
   m_Layer: 0
   m_Name: Up  (17)
   m_TagString: Untagged
@@ -38967,6 +39148,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1447003759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447003755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 17
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1480681364
 GameObject:
   m_ObjectHideFlags: 0
@@ -39243,6 +39438,7 @@ GameObject:
   - component: {fileID: 1619564505}
   - component: {fileID: 1619564506}
   - component: {fileID: 1619564507}
+  - component: {fileID: 1619564508}
   m_Layer: 0
   m_Name: Up  (6)
   m_TagString: Untagged
@@ -39333,6 +39529,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1619564508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619564504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 6
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1652748499
 GameObject:
   m_ObjectHideFlags: 0
@@ -39344,6 +39554,7 @@ GameObject:
   - component: {fileID: 1652748500}
   - component: {fileID: 1652748501}
   - component: {fileID: 1652748502}
+  - component: {fileID: 1652748503}
   m_Layer: 0
   m_Name: Up  (9)
   m_TagString: Untagged
@@ -39434,6 +39645,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1652748503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652748499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 9
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1665911679
 GameObject:
   m_ObjectHideFlags: 0
@@ -39825,10 +40050,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1694153691}
-        m_TargetAssemblyTypeName: ChangeCam, Assembly-CSharp
-        m_MethodName: Changecam
-        m_Mode: 3
+      - m_Target: {fileID: 496703164}
+        m_TargetAssemblyTypeName: FilaControler, Assembly-CSharp
+        m_MethodName: MovePacient
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -39886,6 +40111,7 @@ GameObject:
   - component: {fileID: 1737977500}
   - component: {fileID: 1737977501}
   - component: {fileID: 1737977502}
+  - component: {fileID: 1737977503}
   m_Layer: 0
   m_Name: Up  (13)
   m_TagString: Untagged
@@ -39976,6 +40202,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1737977503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737977499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 13
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1756192390
 GameObject:
   m_ObjectHideFlags: 0
@@ -40316,6 +40556,7 @@ GameObject:
   - component: {fileID: 1801650311}
   - component: {fileID: 1801650312}
   - component: {fileID: 1801650313}
+  - component: {fileID: 1801650314}
   m_Layer: 0
   m_Name: Up  (15)
   m_TagString: Untagged
@@ -40406,6 +40647,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1801650314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801650310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 15
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1803967079
 GameObject:
   m_ObjectHideFlags: 0
@@ -40417,6 +40672,7 @@ GameObject:
   - component: {fileID: 1803967080}
   - component: {fileID: 1803967081}
   - component: {fileID: 1803967082}
+  - component: {fileID: 1803967083}
   m_Layer: 0
   m_Name: Up  (2)
   m_TagString: Untagged
@@ -40507,6 +40763,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1803967083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803967079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 2
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1819018282
 GameObject:
   m_ObjectHideFlags: 0
@@ -41353,6 +41623,7 @@ GameObject:
   - component: {fileID: 1965518951}
   - component: {fileID: 1965518952}
   - component: {fileID: 1965518953}
+  - component: {fileID: 1965518954}
   m_Layer: 0
   m_Name: Up  (19)
   m_TagString: Untagged
@@ -41443,6 +41714,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &1965518954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965518950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 19
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &1986719300
 GameObject:
   m_ObjectHideFlags: 0
@@ -41852,6 +42137,7 @@ GameObject:
   - component: {fileID: 2120275337}
   - component: {fileID: 2120275338}
   - component: {fileID: 2120275339}
+  - component: {fileID: 2120275340}
   m_Layer: 0
   m_Name: Up  (11)
   m_TagString: Untagged
@@ -41942,6 +42228,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.0666667, y: 1.0666667}
   m_Direction: 0
+--- !u!114 &2120275340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120275336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737429317b777934289eae76c6a6d8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacinetSelected: 11
+  arrowSelect: {fileID: 842029779}
 --- !u!1 &2146674080
 GameObject:
   m_ObjectHideFlags: 0

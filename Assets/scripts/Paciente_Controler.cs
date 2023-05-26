@@ -50,7 +50,7 @@ public class Paciente_Controler : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(waitTime);
+           
             Instantiate(pacient, spawPoint);
             if (Data_Controler.route == 1)
             {
@@ -61,6 +61,7 @@ public class Paciente_Controler : MonoBehaviour
                     if(Data_Controler.pacientNumeber < 20)
                     {
                         Data_Controler.pacientNumeber++;
+                       
                     }
                     else
                     {
@@ -87,7 +88,8 @@ public class Paciente_Controler : MonoBehaviour
 
                 });
             }
-           
+            yield return new WaitForSeconds(waitTime);
+
 
         }
     }
