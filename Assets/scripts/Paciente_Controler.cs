@@ -58,7 +58,15 @@ public class Paciente_Controler : MonoBehaviour
                 GameObject.FindGameObjectWithTag("pacient").transform.DOPath(tragetoria, vel, PathType.CatmullRom, PathMode.Ignore).SetEase(Ease.Linear).SetLookAt(0).OnComplete(() =>
                 {
                     Destroy(GameObject.FindGameObjectWithTag("pacient"));
-                    Data_Controler.pacientNumeber++;
+                    if(Data_Controler.pacientNumeber < 20)
+                    {
+                        Data_Controler.pacientNumeber++;
+                    }
+                    else
+                    {
+                        Data_Controler.pacientsLost++;
+                    }
+                   
 
                 });
             }
@@ -68,7 +76,14 @@ public class Paciente_Controler : MonoBehaviour
                 GameObject.FindGameObjectWithTag("pacient").transform.DOPath(tragetoria2, vel+1, PathType.CatmullRom, PathMode.Ignore).SetEase(Ease.Linear).SetLookAt(0).OnComplete(() =>
                 {
                     Destroy(GameObject.FindGameObjectWithTag("pacient"));
-                    Data_Controler.pacientNumeber++;
+                    if (Data_Controler.pacientNumeber < 20)
+                    {
+                        Data_Controler.pacientNumeber++;
+                    }
+                    else
+                    {
+                        Data_Controler.pacientsLost++;
+                    }
 
                 });
             }

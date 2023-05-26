@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Controler_Menu_Info : MonoBehaviour
 {
-    public TextMeshProUGUI season, risk, number;
+    public TextMeshProUGUI season, risk, number,numberLost;
     public GameObject winter, sumer, autunm, spring;
     public float time,timetochange;
     public int seasonFlag;
@@ -20,6 +20,7 @@ public class Controler_Menu_Info : MonoBehaviour
     void Update()
     {
         number.text = Data_Controler.pacientNumeber.ToString();
+        numberLost.text = Data_Controler.pacientsLost.ToString();
 
         SeanonControler();
     }
@@ -39,7 +40,7 @@ public class Controler_Menu_Info : MonoBehaviour
         {
             case 1:
                 season.text = "WINTER";
-                risk.text = "GRIPPE";
+                risk.text = "INFLUENZA";
                 sumer.SetActive(false);
                 autunm.SetActive(false);
                 spring.SetActive(false);
