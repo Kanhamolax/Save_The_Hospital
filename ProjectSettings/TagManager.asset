@@ -7,6 +7,10 @@ TagManager:
   - pacient
   - Rote1
   - Rote2
+  - xray
+  - antpoison
+  - respirator
+  - remedy
   layers:
   - Default
   - TransparentFX

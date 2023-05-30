@@ -1,32 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeCam : MonoBehaviour
 {
-    public Camera cam,cam2;
+    public GameObject[] cam;
     // Start is called before the first frame update
-    void Start()
+  
+    public void ChangeSene(string sene)
     {
-        
+        SceneManager.LoadScene(sene);
     }
+    public void Changecam(int k)
+    {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void Changecam(int i)
-    {
-       if(i== 0) 
-       {
-            cam.gameObject.SetActive(true);
-            cam2.gameObject.SetActive(false);
-       }
-        if (i == 1)
+        for (int j = 0; j < cam.Length; j++)
         {
-            cam.gameObject.SetActive(false);
-            cam2.gameObject.SetActive(true);
+            if (k == j)
+            {
+
+                cam[k].SetActive(true);
+            }
+            else
+            {
+
+                cam[j].SetActive(false);
+
+            }
         }
+
     }
 }

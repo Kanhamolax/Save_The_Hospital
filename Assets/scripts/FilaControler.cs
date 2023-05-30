@@ -1,17 +1,20 @@
 using DG.Tweening;
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class FilaControler : MonoBehaviour
 {
     public GameObject[] pacinetWait;
+    public GameObject pacinext;
     int[] emptyChair;
     bool positionVoid;
     int firstPositionVoid, counter, newpacients,positionLoc,ocupedPositions;
     // Start is called before the first frame update
     void Awake()
     {
+        Data_Controler.movepacient = false;
+        Data_Controler.pacinetGotratament = -1;
         firstPositionVoid = 0;
         emptyChair= new int[pacinetWait.Length];
         for (int i = 0; i < emptyChair.Length; i++)
@@ -40,6 +43,23 @@ public class FilaControler : MonoBehaviour
             positionLoc = FindVoidPosition();
             emptyChair[positionLoc] = 1;
             pacinetWait[positionLoc].SetActive(true);
+            if (Data_Controler.illness == 0)
+            {
+                pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.blue;
+                StartCoroutine(PacientLost(pacinetWait[positionLoc],50));            }
+            else if (Data_Controler.illness == 1)
+            {
+                pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.green;
+                StartCoroutine(PacientLost(pacinetWait[positionLoc], 30));
+            }
+            else if (Data_Controler.illness == 2)
+            {
+                pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.red;
+            }
+            else if (Data_Controler.illness == 3)
+            {
+                pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.yellow;
+            }
         }
         
 
@@ -47,13 +67,18 @@ public class FilaControler : MonoBehaviour
     public int FindVoidPosition()
     {
         counter = 0;
+        positionVoid = false;
         while(counter<emptyChair.Length)
         {
             if (emptyChair[counter] == 0)
             {
-                firstPositionVoid= counter;
-                counter = 1000;
-            }
+               
+                    firstPositionVoid = counter;
+                    counter = 1000;
+                }
+                positionVoid= true;
+                
+          
             counter++;
         }
         Debug.Log("primei posicao livre "+firstPositionVoid);
@@ -102,13 +127,30 @@ public class FilaControler : MonoBehaviour
     {
         if (emptyChair[Data_Controler.pacientSelect] == 1)
         {
+            Data_Controler.movepacient = true;
             pacinetWait[Data_Controler.pacientSelect].SetActive(false);
             emptyChair[Data_Controler.pacientSelect] = 0;
-            Data_Controler.pacientNumeber--;
+            pacinext.SetActive(true);
+          
+            StartCoroutine(RealocPemition());
         }
-      
-    }
 
+    }
+    public IEnumerator RealocPemition()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Data_Controler.movepacient = false;
+
+    }
+    public IEnumerator PacientLost(GameObject pacientlost, int time2)
+    {
+        yield return new WaitForSeconds(time2);
+        pacientlost.SetActive(false);
+        Data_Controler.pacientNumeber --;
+        Data_Controler.pacientsLost++;
+       
+    }
+    
     public IEnumerator LocPacinetsSpam(float waitTime)
     {
         while (true)
