@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CuraData : MonoBehaviour
 {
@@ -25,6 +27,7 @@ public class CuraData : MonoBehaviour
     void FixedUpdate()
     {
         Stok();
+        GameOver();
     }
     public void CuraUtilizada(int cura)
     {
@@ -95,5 +98,13 @@ public class CuraData : MonoBehaviour
         remedy.text=Data_Controler.costRemedy.ToString() + ",00";
         remedy2.text=Data_Controler.quantRemedy.ToString();
         remedy3.text = Data_Controler.quantRemedy.ToString();
+    }
+
+    public void GameOver()
+    {
+        if(Data_Controler.pacientsLost==20)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }

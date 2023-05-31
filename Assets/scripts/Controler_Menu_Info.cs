@@ -49,8 +49,8 @@ public class Controler_Menu_Info : MonoBehaviour
         {
             case 1:
                 Data_Controler.currentSeason = 0;
-                season.text = "WINTER";
-                risk.text = "INFLUENZA";
+                season.text = "INVERNO";
+                risk.text = "PNEUMONIA";
                 sumer.SetActive(false);
                 autunm.SetActive(false);
                 spring.SetActive(false);
@@ -62,8 +62,8 @@ public class Controler_Menu_Info : MonoBehaviour
                 break;
             case 2:
                 Data_Controler.currentSeason = 1;
-                season.text = "SPRING";
-                risk.text = "POISON";
+                season.text = "PRIMAVERA";
+                risk.text = "PEÇONHA";
                 winter.SetActive(false);
                 sumer.SetActive(false);
                 autunm.SetActive(false);
@@ -75,8 +75,8 @@ public class Controler_Menu_Info : MonoBehaviour
                 break;
             case 3:
                 Data_Controler.currentSeason = 2;
-                season.text = "SUMER";
-                risk.text = "ACIDENT";
+                season.text = "VERÃO";
+                risk.text = "ACIDENTE";
 
                 autunm.SetActive(false);
                 winter.SetActive(false);
@@ -89,8 +89,8 @@ public class Controler_Menu_Info : MonoBehaviour
                 break;
             case 4:
                 Data_Controler.currentSeason = 3;
-                season.text = "AUTUNM";
-                risk.text = "GRIPPE";
+                season.text = "AUTONO";
+                risk.text = "GRIPE";
                 sumer.SetActive(false);
                 winter.SetActive(false);
                 spring.SetActive(false);

@@ -46,11 +46,11 @@ public class FilaControler : MonoBehaviour
             if (Data_Controler.illness == 0)
             {
                 pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.blue;
-                StartCoroutine(PacientLost(pacinetWait[positionLoc],50));            }
+                StartCoroutine(PacientLost(pacinetWait[positionLoc],50,positionLoc));            }
             else if (Data_Controler.illness == 1)
             {
                 pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.green;
-                StartCoroutine(PacientLost(pacinetWait[positionLoc], 30));
+                StartCoroutine(PacientLost(pacinetWait[positionLoc], 30,positionLoc));
             }
             else if (Data_Controler.illness == 2)
             {
@@ -142,10 +142,11 @@ public class FilaControler : MonoBehaviour
         Data_Controler.movepacient = false;
 
     }
-    public IEnumerator PacientLost(GameObject pacientlost, int time2)
+    public IEnumerator PacientLost(GameObject pacientlost, int time2, int possition)
     {
         yield return new WaitForSeconds(time2);
         pacientlost.SetActive(false);
+        emptyChair[possition] = 0;
         Data_Controler.pacientNumeber --;
         Data_Controler.pacientsLost++;
        

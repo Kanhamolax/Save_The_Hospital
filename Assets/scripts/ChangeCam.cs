@@ -29,6 +29,13 @@ public class ChangeCam : MonoBehaviour
 
             }
         }
+        
+        
+    }
+    public void Sair()
+    {
+        Application.Quit();
 
     }
 }
+
