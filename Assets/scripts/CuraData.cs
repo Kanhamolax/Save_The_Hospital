@@ -21,6 +21,7 @@ public class CuraData : MonoBehaviour
         Data_Controler.costRemedy = 10;
         Data_Controler.pacinetGotratament = -1;
         Data_Controler.tratamentUse = 0;
+        Data_Controler.camChange = true;
 
 
     }

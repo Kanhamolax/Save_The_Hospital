@@ -15,20 +15,24 @@ public class ChangeCam : MonoBehaviour
     public void Changecam(int k)
     {
 
-        for (int j = 0; j < cam.Length; j++)
+        if(Data_Controler.camChange)
         {
-            if (k == j)
+            for (int j = 0; j < cam.Length; j++)
             {
+                if (k == j)
+                {
 
-                cam[k].SetActive(true);
-            }
-            else
-            {
+                    cam[k].SetActive(true);
+                }
+                else
+                {
 
-                cam[j].SetActive(false);
+                    cam[j].SetActive(false);
 
+                }
             }
         }
+       
         
         
     }

@@ -46,16 +46,17 @@ public class FilaControler : MonoBehaviour
             if (Data_Controler.illness == 0)
             {
                 pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.blue;
-                StartCoroutine(PacientLost(pacinetWait[positionLoc],50,positionLoc));            }
+               // StartCoroutine(PacientLost(pacinetWait[positionLoc],57,positionLoc));
+            }
             else if (Data_Controler.illness == 1)
             {
                 pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.green;
-                StartCoroutine(PacientLost(pacinetWait[positionLoc], 30,positionLoc));
+               // StartCoroutine(PacientLost(pacinetWait[positionLoc], 37,positionLoc));
             }
             else if (Data_Controler.illness == 2)
             {
                 pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.red;
-                StartCoroutine(PacientLost(pacinetWait[positionLoc], 50, positionLoc));
+                //StartCoroutine(PacientLost(pacinetWait[positionLoc], 57, positionLoc));
             }
             else if (Data_Controler.illness == 3)
             {
@@ -75,8 +76,13 @@ public class FilaControler : MonoBehaviour
             {
                
                     firstPositionVoid = counter;
-                    counter = 1000;
-                }
+                
+                        counter = 1000;
+                      
+                      
+                  
+                   
+            }
                 positionVoid= true;
                 
           
@@ -131,7 +137,9 @@ public class FilaControler : MonoBehaviour
             Data_Controler.movepacient = true;
             pacinetWait[Data_Controler.pacientSelect].SetActive(false);
             emptyChair[Data_Controler.pacientSelect] = 0;
+           
             pacinext.SetActive(true);
+           
           
             StartCoroutine(RealocPemition());
         }
@@ -147,9 +155,13 @@ public class FilaControler : MonoBehaviour
     {
         yield return new WaitForSeconds(time2);
         pacientlost.SetActive(false);
-        emptyChair[possition] = 0;
-        Data_Controler.pacientNumeber --;
-        Data_Controler.pacientsLost++;
+        if (emptyChair[possition] == 1) 
+        {
+            emptyChair[possition] = 0;
+            Data_Controler.pacientNumeber--;
+            Data_Controler.pacientsLost++;
+        }
+       
        
     }
     

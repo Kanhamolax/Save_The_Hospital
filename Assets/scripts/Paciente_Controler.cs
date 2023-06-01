@@ -37,7 +37,7 @@ public class Paciente_Controler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawPacient(5));
+        StartCoroutine(SpawPacient(5    ));
         
     }
 

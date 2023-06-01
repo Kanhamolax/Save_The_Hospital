@@ -23,7 +23,7 @@ public class Remedy : MonoBehaviour
     }
     public IEnumerator EndAnimation(GameObject obj2)
     {
-        yield return new WaitForSeconds(2.2f);
+        yield return new WaitForSeconds(3);
         obj2.SetActive(false);
 
 

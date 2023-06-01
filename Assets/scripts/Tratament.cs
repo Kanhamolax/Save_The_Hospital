@@ -61,29 +61,56 @@ public class Tratament : MonoBehaviour
         }
     }
 
-    public void Tratamento(int op)
+    public void Tratamento(int cura)
     {
-        if(op == 1 && Data_Controler.quantRespirator>=1 && Data_Controler.pacinetGotratament > 0) 
+        Data_Controler.camChange = false;
+      
+        if (cura == 1 && Data_Controler.quantRespirator >= 1 && Data_Controler.pacinetGotratament > 0)
         {
             obj.SetActive(true);
-            pacinet.GetComponent<Animator>().SetInteger("TratamentoS",op);
+            pacinet.GetComponent<Animator>().SetInteger("TratamentoS", cura);
             StartCoroutine(EndAnimation(obj));
+            Data_Controler.tratamentUse = cura;
+            Data_Controler.quantRespirator--;
         }
-        else if (op==3 && Data_Controler.quantXray>=1 && Data_Controler.pacinetGotratament > 0)
+        if (cura == 2 && Data_Controler.quantAntPOison >= 1 && Data_Controler.pacinetGotratament > 0)
         {
-            pacinet.GetComponent<Animator>().SetInteger("TratamentoS", op);
+            Data_Controler.tratamentUse = cura;
+            Data_Controler.quantAntPOison--;
+            StartCoroutine(WaitAnimation());
+        }
+        if (cura == 3 && Data_Controler.quantXray >= 1 && Data_Controler.pacinetGotratament > 0)
+        {
+            pacinet.GetComponent<Animator>().SetInteger("TratamentoS", cura);
             obj2.SetActive(true);
             StartCoroutine(EndAnimation(obj2));
+            Data_Controler.tratamentUse = cura;
+            Data_Controler.quantXray--;
         }
-       
-        
-       
+        if (cura == 4 && Data_Controler.quantRemedy >= 1 && Data_Controler.pacinetGotratament > 0)
+        {
+            Data_Controler.tratamentUse = cura;
+            Data_Controler.quantRemedy--;
+            StartCoroutine(WaitAnimation());
+        }
+
+
+
     }
     public  IEnumerator EndAnimation(GameObject obj2)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3);
         obj2.SetActive(false);
         pacinet.GetComponent<Animator>().SetInteger("TratamentoS", 0);
+        Data_Controler.camChange = true;
+
+
+    }
+    public IEnumerator WaitAnimation()
+    {
+        yield return new WaitForSeconds(3);
+       
+        Data_Controler.camChange = true;
 
 
     }
