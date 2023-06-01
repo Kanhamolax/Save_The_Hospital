@@ -89,7 +89,7 @@ public class Controler_Menu_Info : MonoBehaviour
                 break;
             case 4:
                 Data_Controler.currentSeason = 3;
-                season.text = "AUTONO";
+                season.text = "OUTONO";
                 risk.text = "GRIPE";
                 sumer.SetActive(false);
                 winter.SetActive(false);

@@ -55,6 +55,7 @@ public class FilaControler : MonoBehaviour
             else if (Data_Controler.illness == 2)
             {
                 pacinetWait[positionLoc].GetComponent<SpriteRenderer>().color = Color.red;
+                StartCoroutine(PacientLost(pacinetWait[positionLoc], 50, positionLoc));
             }
             else if (Data_Controler.illness == 3)
             {
