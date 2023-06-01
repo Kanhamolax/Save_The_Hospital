@@ -39,7 +39,7 @@ public class Controler_Menu_Info : MonoBehaviour
         if (time >= timetochange)
         {
             seasonFlag++;
-            if (seasonFlag == 4)
+            if (seasonFlag == 5)
             {
                 seasonFlag = 1;
             }

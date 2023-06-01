@@ -27,7 +27,7 @@ public class CuraData : MonoBehaviour
     void FixedUpdate()
     {
         Stok();
-        GameOver();
+        GameOver(false);
     }
     public void CuraUtilizada(int cura)
     {
@@ -56,22 +56,22 @@ public class CuraData : MonoBehaviour
     }
     public void BuyStok(int prodt)
     {
-        if(prodt==1)
+        if(prodt==1 && Data_Controler.money>=Data_Controler.costRespirator)
         {
             Data_Controler.quantRespirator++;
             Data_Controler.money -= Data_Controler.costRespirator;
         }
-        if (prodt == 2)
+        if (prodt == 2 && Data_Controler.money >= Data_Controler.costAntPOison)
         {
             Data_Controler.quantAntPOison++;
             Data_Controler.money -= Data_Controler.costAntPOison;
         }
-        if (prodt == 3)
+        if (prodt == 3 && Data_Controler.money >= Data_Controler.costXray)
         {
             Data_Controler.quantXray++;
             Data_Controler.money-= Data_Controler.costXray;
         }
-        if (prodt == 4)
+        if (prodt == 4 && Data_Controler.money >= Data_Controler.costRemedy)
         {
             Data_Controler.quantRemedy++;
             Data_Controler.money -= Data_Controler.costRemedy;
@@ -100,11 +100,25 @@ public class CuraData : MonoBehaviour
         remedy3.text = Data_Controler.quantRemedy.ToString();
     }
 
-    public void GameOver()
+    public void GameOver(bool exit)
     {
-        if(Data_Controler.pacientsLost==20)
+        if(Data_Controler.pacientsLost==20 || exit)
         {
             SceneManager.LoadScene("GameOver");
+            Data_Controler.pacientNumeber = 0;
+            Data_Controler.pacientsLost = 0;
+
+            Data_Controler.money = 1000;
+            Data_Controler.costRespirator = 20;
+            Data_Controler.costAntPOison = 15;
+            Data_Controler.costXray = 20;
+            Data_Controler.costRemedy = 10;
+            Data_Controler.pacinetGotratament = -1;
+            Data_Controler.tratamentUse = 0;
+            Data_Controler.quantAntPOison= 0;
+            Data_Controler.quantRemedy = 0;
+            Data_Controler.quantXray = 0;
+            Data_Controler.quantRespirator = 0;
         }
     }
 }
